@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Check Weather Updates</h1>
+
+
+    <div class="container">
+
+
+            <form action="">
+            <div>
+                <label for="city">SELECT CITY:</label>
+                <input list="stateOptions" id="states" name="state" required>
+                <datalist id="stateOptions">
+                    <option value="Mumbai"></option>
+                    <option value="Bengaluru"></option>
+                    <option value="Hyderabad"></option>
+                    <option value="Ahmedabad"></option>
+                    <option value="Chennai"></option>
+                    <option value="Kolkata"></option>
+                    <option value="Pune"></option>
+                    <option value="Jaipur"></option>
+                    <option value="Ahmedabad"></option>
+                    <option value="Lucknow"></option>
+                </datalist>
+        
+            </div>
+            
+        </form>
+
+    </div>
+
+
+    <div class="btncontainer">
+        <button type="submit" id="btn" onclick="fetchWeather()">Submit</button>
+        
+    </div>
+
+    <div class="container" id="weatherResult"></div>
+        
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
